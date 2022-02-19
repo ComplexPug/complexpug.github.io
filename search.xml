@@ -11,18 +11,6 @@
         <content type="html"><![CDATA[<h3 id="打开setting-json"><a href="#打开setting-json" class="headerlink" title="打开setting.json"></a>打开setting.json</h3><p>这个好像是更新后就只能打开setting了<del>也可以改成默认打开setting.json</del>。<br>先ctrl+shift+p打开搜索框，然后直接搜索setting.json就行了</p><h3 id="过滤特定文件类型"><a href="#过滤特定文件类型" class="headerlink" title="过滤特定文件类型"></a>过滤特定文件类型</h3><p>左侧文件夹显示过滤exe等。<br>先到默认配置文件(default)找找files.exclude<br>然后直接copy到setting.json就行了。<br>比如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  //过滤文件</span><br><span class="line">  &quot;files.exclude&quot;: &#123;</span><br><span class="line">      &quot;**/*.exe&quot;: true,</span><br><span class="line">      &quot;**/.DS_Store&quot;: true,</span><br><span class="line">      &quot;**/.hg&quot;: true,</span><br><span class="line">      &quot;**/.svn&quot;: true,</span><br><span class="line">      &quot;**/*.git&quot;: true,</span><br><span class="line">      &quot;**/CVS&quot;: true,</span><br><span class="line">      &quot;**/Thumbs.db&quot;: true</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
-      <categories>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 学习 </tag>
-            
-        </tags>
       
     </entry>
     
