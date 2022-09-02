@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>sublime的配置 | ComplexPug</title><meta name="keywords" content="学习"><meta name="author" content="ComplexPug"><meta name="copyright" content="ComplexPug"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="都是一些零散的东西哈哈他的配置文件大多都是json格式。而自己的用户配置一般都在Packages&#x2F;User。这里都是汉化后的一些菜单名称。sublimetext4之后加入了gpu渲染，默认关闭,文档链接。 快捷键部分1.ctrl+d 选定下一个。想跳过这个实例，就需要ctrl+k如果选多了，可以ctrl+u取消。 2.ctrl+l,选定一行或者多行。 3.sublime还有一个控制台，内置了单独的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sublime的配置">
+<meta property="og:url" content="https://complexpug.com/2022/09/01/sublime%E7%9A%84%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="ComplexPug">
+<meta property="og:description" content="都是一些零散的东西哈哈他的配置文件大多都是json格式。而自己的用户配置一般都在Packages&#x2F;User。这里都是汉化后的一些菜单名称。sublimetext4之后加入了gpu渲染，默认关闭,文档链接。 快捷键部分1.ctrl+d 选定下一个。想跳过这个实例，就需要ctrl+k如果选多了，可以ctrl+u取消。 2.ctrl+l,选定一行或者多行。 3.sublime还有一个控制台，内置了单独的">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/complexpug/img/img082.jpg">
+<meta property="article:published_time" content="2022-08-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-02T05:15:13.434Z">
+<meta property="article:author" content="ComplexPug">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/complexpug/img/img082.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/complexpug/img/imgtx.jpg"><link rel="canonical" href="https://complexpug.com/2022/09/01/sublime%E7%9A%84%E9%85%8D%E7%BD%AE/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'sublime的配置',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-09-02 13:15:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/dsr.css"><script src="/js/dsr.js"></script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/complexpug/img/imgtx.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/complexpug/img/img086.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ComplexPug</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">sublime的配置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-08-31T16:00:00.000Z" title="Created 2022-09-01 00:00:00">2022-09-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-09-02T05:15:13.434Z" title="Updated 2022-09-02 13:15:13">2022-09-02</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="sublime的配置"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="都是一些零散的东西哈哈"><a href="#都是一些零散的东西哈哈" class="headerlink" title="都是一些零散的东西哈哈"></a>都是一些零散的东西哈哈</h2><p>他的配置文件大多都是json格式。<br>而自己的用户配置一般都在Packages/User。<br>这里都是汉化后的一些菜单名称。<br>sublimetext4之后加入了gpu渲染，默认关闭,<a target="_blank" rel="noopener" href="https://www.sublimetext.com/docs/gpu_rendering.html">文档链接</a>。</p>
+<h2 id="快捷键部分"><a href="#快捷键部分" class="headerlink" title="快捷键部分"></a>快捷键部分</h2><h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><p>ctrl+d 选定下一个。<br>想跳过这个实例，就需要ctrl+k<br>如果选多了，可以ctrl+u取消。</p>
+<h4 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h4><p>ctrl+l,选定一行或者多行。</p>
+<h4 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h4><p>sublime还有一个控制台，内置了单独的python，ctrl+`就能打开。</p>
+<h4 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h4><p>打开命令面板(ctrl+shift+p)进行插件安装算是最基本的了。</p>
+<h4 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h4><p>shift+alt+数字，窗口的多少。</p>
+<h2 id="构建编译系统-sublime-build"><a href="#构建编译系统-sublime-build" class="headerlink" title="构建编译系统 sublime-build"></a>构建编译系统 sublime-build</h2><p>构建的编译系统可能就是类似于用json集成了你的命令行，所有在构建前需要配置好环境变量的PATH。</p>
+<h4 id="6"><a href="#6" class="headerlink" title="6."></a>6.</h4><p>运行代码的话，可以ctrl+b或者f7</p>
+<h2 id="插入代码片段-sublime-snippet"><a href="#插入代码片段-sublime-snippet" class="headerlink" title="插入代码片段 sublime-snippet"></a>插入代码片段 sublime-snippet</h2><p>这个简单，工具-&gt;插件开发-&gt;新建代码片段。<br>然后把片段插入进去就行了。<br>名字需要一致，下面的文件名字就是hello.sublime-snippet，如果想只在python中用就写suorce.python,不想就注释掉。<br>这个${1:this}就是插入之后光标的位置，tab就会切换到位置2，以此类推。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">snippet</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">content</span>&gt;</span>&lt;![CDATA[</span><br><span class="line">Hello, $&#123;1:this&#125; is a $&#123;2:snippet&#125;.</span><br><span class="line">]]&gt;<span class="tag">&lt;/<span class="name">content</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tabTrigger</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">tabTrigger</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>source.python<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">snippet</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="插件部分。-Package"><a href="#插件部分。-Package" class="headerlink" title="插件部分。 Package"></a>插件部分。 Package</h2><p>打开命令面板，输入install Package，就能进去找插件了。<br>汉化就输入chinese，第一个就是。<br>还有lsp这个也很火。</p>
+<h2 id="命令行用法"><a href="#命令行用法" class="headerlink" title="命令行用法"></a>命令行用法</h2><p>我记得VScode安装的时候可以自动配置path，然后命令行输入code就可以打开VScode了。<br>sublime也可以。<br>首先环境变量的Path加入sublime的地址，使得subl.exe可以使用。<br>比如一些简单的操作。<br>1.输入subl就可以打开sublime。<br>2.subl file 如果存在就打开，不存在就创建一个新的，名字就是name_file，你保存的时候才会给你保存到文件夹下，不然关闭不保存是不会存在的。<br>3.–project <project><br>加载给定的项目。project参数指定要加载的.sublime-project或文件.sublime-workspace。<br>4.–command <command><br>执行给定的命令。<br>command参数指定要运行的命令。<br>如果 Sublime Text 还没有运行，只有ApplicationCommands 从命令行调用时会起作用。如果 Sublime Text 已经在运行，<br>WindowCommand从命令行调用 s 也可以正常工作。<br>您还可以将参数传递给命令。参数必须用空格与命令名称隔开，并表示为 JSON 对象。像往常一样，您必须根据 shell 的要求对引号和其他字符进行转义。例如，此语法可以在 bash 和 PowerShell 中工作： .subl –command ‘echo {&quot;foo&quot;: 100 }’<br>5.–new-window (-n)<br>打开一个新窗口。<br>当 Sublime Text 的实例已经在运行时，应该使用这个选项。<br>6.–add (-a)<br>将文件夹添加到当前窗口。<br>将文件夹添加到当前窗口而不是打开新窗口。<br>7.–wait (-w)<br>等待文件关闭后再返回。<br>这很有用，例如，将 Sublime Text 用作带有 git 等版本控制系统的编辑器。如果从标准输入读取，则隐含。<br>8.–background (-b)<br>不要激活应用程序。<br>9.–stay (-s)<br>关闭文件后保持应用程序处于激活状态。<br>仅与 结合使用–wait。<br>10.–help (-h)<br>显示帮助。<br>11.–version (-v)<br>显示版本信息。</p>
+<h2 id="终端terminal"><a href="#终端terminal" class="headerlink" title="终端terminal"></a>终端terminal</h2></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">ComplexPug</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://complexpug.com/2022/09/01/sublime%E7%9A%84%E9%85%8D%E7%BD%AE/">https://complexpug.com/2022/09/01/sublime%E7%9A%84%E9%85%8D%E7%BD%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/complexpug/img/img082.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/01/02/daily/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/complexpug/img/img052.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">daily</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/complexpug/img/imgtx.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ComplexPug</div><div class="author-info__description">劈里啪啦咚咚咚</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/complexpug"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/complexpug" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:3010651817@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%BD%E6%98%AF%E4%B8%80%E4%BA%9B%E9%9B%B6%E6%95%A3%E7%9A%84%E4%B8%9C%E8%A5%BF%E5%93%88%E5%93%88"><span class="toc-number">1.</span> <span class="toc-text">都是一些零散的东西哈哈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%83%A8%E5%88%86"><span class="toc-number">2.</span> <span class="toc-text">快捷键部分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1"><span class="toc-number">2.0.1.</span> <span class="toc-text">1.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2"><span class="toc-number">2.0.2.</span> <span class="toc-text">2.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3"><span class="toc-number">2.0.3.</span> <span class="toc-text">3.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4"><span class="toc-number">2.0.4.</span> <span class="toc-text">4.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5"><span class="toc-number">2.0.5.</span> <span class="toc-text">5.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F-sublime-build"><span class="toc-number">3.</span> <span class="toc-text">构建编译系统 sublime-build</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6"><span class="toc-number">3.0.1.</span> <span class="toc-text">6.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5-sublime-snippet"><span class="toc-number">4.</span> <span class="toc-text">插入代码片段 sublime-snippet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E9%83%A8%E5%88%86%E3%80%82-Package"><span class="toc-number">5.</span> <span class="toc-text">插件部分。 Package</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%94%A8%E6%B3%95"><span class="toc-number">6.</span> <span class="toc-text">命令行用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%88%E7%AB%AFterminal"><span class="toc-number">7.</span> <span class="toc-text">终端terminal</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/01/sublime%E7%9A%84%E9%85%8D%E7%BD%AE/" title="sublime的配置"><img src="https://cdn.jsdelivr.net/gh/complexpug/img/img082.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="sublime的配置"/></a><div class="content"><a class="title" href="/2022/09/01/sublime%E7%9A%84%E9%85%8D%E7%BD%AE/" title="sublime的配置">sublime的配置</a><time datetime="2022-08-31T16:00:00.000Z" title="Created 2022-09-01 00:00:00">2022-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/02/daily/" title="daily"><img src="https://cdn.jsdelivr.net/gh/complexpug/img/img052.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="daily"/></a><div class="content"><a class="title" href="/2022/01/02/daily/" title="daily">daily</a><time datetime="2022-01-02T07:20:21.000Z" title="Created 2022-01-02 15:20:21">2022-01-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/02/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/gh/complexpug/img/img029.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/01/02/hello-world/" title="Hello World">Hello World</a><time datetime="2022-01-02T06:15:15.739Z" title="Created 2022-01-02 14:15:15">2022-01-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/01/2021%E6%80%BB%E7%BB%93/" title="2021总结"><img src="https://cdn.jsdelivr.net/gh/complexpug/img/img118.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2021总结"/></a><div class="content"><a class="title" href="/2022/01/01/2021%E6%80%BB%E7%BB%93/" title="2021总结">2021总结</a><time datetime="2021-12-31T16:00:00.000Z" title="Created 2022-01-01 00:00:00">2022-01-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/07/%E8%AE%B0%E7%9F%B3%E6%B2%B9%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/" title="记石油综合评价"><img src="https://cdn.jsdelivr.net/gh/complexpug/img/img021.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记石油综合评价"/></a><div class="content"><a class="title" href="/2021/01/07/%E8%AE%B0%E7%9F%B3%E6%B2%B9%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7/" title="记石油综合评价">记石油综合评价</a><time datetime="2021-01-07T04:47:07.000Z" title="Created 2021-01-07 12:47:07">2021-01-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022  <i id="heartbeat" class="fa fas fa-heartbeat"></i>  ComplexPug</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">瞎搞，瞎搞，哈哈哈</div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><link rel="stylesheet" href="/css/dsr.css"><script src="/js/dsr.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
